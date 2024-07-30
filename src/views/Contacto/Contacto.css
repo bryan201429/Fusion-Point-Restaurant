@@ -23,11 +23,12 @@
     height: 100%;
 }
 #section1 h1{
+    font-family: 'Space Grotesk', sans-serif;
     position: relative;
     z-index: 1;
     /* filter: blur(0); */  
     font-size: 10.5vh;
-    letter-spacing: 10px;
+    letter-spacing: 12px;
     margin-left: 50%;
     margin-right: 5%;
     text-align: right;
@@ -40,6 +41,9 @@
     background-color: rgb(227, 227, 227);
     height: 70vh;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 #section3{
     position: relative;
@@ -74,4 +78,30 @@
     100% {
         transform: translateY(0);
     }
+}
+
+.leftDiv{
+    /* background-color: red; */
+    width:  50%;
+    height: 100%;
+}
+.rightDiv{
+    /* background-color: green; */
+    width:  50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightDiv h2{
+    color: black;
+    text-align: left;
+    margin: 0;
+    margin-right: auto;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 2vw;
+    
 }
