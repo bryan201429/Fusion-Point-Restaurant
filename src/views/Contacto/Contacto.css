@@ -85,6 +85,24 @@
     width:  50%;
     height: 100%;
 }
+
+.leftDiv h2{
+    margin-left: 10%;
+    margin-right: auto;
+    color: black;
+    text-align: left;
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+.leftDiv h3{
+    margin: 0;
+    margin-left: 10%;
+    margin-right: auto;
+    color: black;
+    text-align: left;
+    font-weight: 600;
+}
+
 .rightDiv{
     /* background-color: green; */
     width:  50%;
@@ -103,5 +121,17 @@
     margin-bottom: 10px;
     letter-spacing: 2px;
     font-size: 2vw;
-    
+}
+
+
+#divider {
+    width: 80%;
+    border: 0;
+    height: 3px;
+    background: rgba(50, 50, 50, 0.8); /* Color de la línea divisoria */
+    margin: 20px 0; /* Espaciado arriba y abajo de la línea */
+    z-index: 1;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
