@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+#HomeContainer{
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url('../../assets/backgrounds/blackWood.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#titleContainer{
+   z-index: 6;
+   width: 55%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* background-color: red; */
+}
+#titleContainer h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5vw;
+    font-weight:400;
+    letter-spacing: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+#titleContainer h3{
+    font-family: 'Gruppo', sans-serif;
+    font-size: 1.3vw;
+    font-weight:400;
+
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+
+}
+#inbtn{
+    margin-top: 3vh;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.4vw;
+    border-radius: 3px;
+    border: 0;
+    background-color: white;
+    color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    height: 3.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    transition: box-shadow 0.5s ease;
+
+}
+#inbtn:hover{
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.9);
+    /* transition: 1s; */
+}
+#img1{
+    position: absolute;
+    left: 0;
+    transform: translateX(-9vw) translateY(-15vh);
+    z-index: 1;
+    overflow-y: hidden;
+}
+#img2{
+    position:absolute;
+    right: 0;
+    transform: translateX(16vw) scale(0.7) translateY(45vh);
+    z-index: 1;
+}
+.smokeWrap{
+    position: absolute;
+    right: 0;
+    transform: translateY(30px) ;
+    
+    z-index: 5;
+}
+
+.smoke{
+    opacity: 0;
+    animation: smokea1 5s linear infinite;
+    animation-delay: 0s;
+}
+.smoke2{
+    opacity: 0;
+    animation: smokea2 6s linear infinite;
+    animation-delay: 1.0s;
+}
+.smoke3{
+    opacity: 0;
+    animation: smokea3 8s linear infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes smokea1 {
+    0% {
+        filter: blur(0px);
+        transform: translateX(35vw) translateY(0px) scale(0.30);
+        opacity: 0;
+    }
+    25% {
+        filter: blur(3px);
+        transform: translateX(35vw) translateY(-15px) scale(0.31);
+        opacity: 0.5;
+    }
+    50% {
+        filter: blur(5px);
+        transform: translateX(35vw) translateY(-30px) scale(0.32);
+        opacity: 1;
+    }
+    75% {
+        filter: blur(5px);
+        transform: translateX(35vw) translateY(-45px) scale(0.31);
+        opacity: 0.5;
+    }
+    100% {
+        filter: blur(7px);
+        transform: translateX(35vw) translateY(-60px) scale(0.3);
+        opacity: 0;
+    }
+}
+
+@keyframes smokea2 {
+    0% {
+        filter: blur(0px);
+        transform: translateX(55vw) translateY(-10px) scale(0.30);
+        opacity: 0;
+    }
+    25% {
+        filter: blur(3px);
+        transform: translateX(55vw) translateY(-35px) scale(0.31);
+        opacity: 0.5;
+    }
+    50% {
+        filter: blur(5px);
+        transform: translateX(55vw) translateY(-50px) scale(0.32);
+        opacity: 1;
+    }
+    75% {
+        filter: blur(5px);
+        transform: translateX(55vw) translateY(-65px) scale(0.31);
+        opacity: 0.5;
+    }
+    100% {
+        filter: blur(7px);
+        transform: translateX(55vw) translateY(-80px) scale(0.3);
+        opacity: 0;
+    }
+}
+
+@keyframes smokea3 {
+    0% {
+        filter: blur(0px);
+        transform: translateX(40vw) translateY(300px) scale(0.30);
+        opacity: 0;
+    }
+    25% {
+        filter: blur(3px);
+        transform: translateX(40vw) translateY(250px) scale(0.31);
+        opacity: 0.5;
+    }
+    50% {
+        filter: blur(5px);
+        transform: translateX(40vw) translateY(200px) scale(0.32);
+        opacity: 1;
+    }
+    75% {
+        filter: blur(5px);
+        transform: translateX(40vw) translateY(150px) scale(0.31);
+        opacity: 0.5;
+    }
+    100% {
+        filter: blur(7px);
+        transform: translateX(40vw) translateY(100px) scale(0.3);
+        opacity: 0;
+    }
+}
