@@ -1,4 +1,4 @@
-# Proyecto de React - Productos Aleatorios
+# Proyecto Restaurante Gastronómico - Fusion Point
 
 Este es un proyecto de React que muestra una lista de productos aleatorios obtenidos de una API externa. Incluye un componente de barra de navegación (Navbar), una sección de productos y un pie de página (Footer).
 
