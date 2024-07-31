@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/Footer';
 
 export default function Products() {
     const [comidas, setComidas] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const obtenerComidas = async () => {
@@ -22,6 +23,7 @@ export default function Products() {
                 }
             }
             setComidas(listaComidas);
+            setIsLoading(false); // Datos cargados, oculta el loader
         };
 
         obtenerComidas();
@@ -30,16 +32,20 @@ export default function Products() {
     return (
         <div id='ProductsContainer'>
             <Navbar />
-            <div id='cardContainer'>
-                {comidas.map((comida, index) => (
-                    <div key={index} className='card'>
-                        <img src={comida.strMealThumb} alt={comida.strMeal} />
-                        <h3>{comida.strMeal}</h3>
-                        <p>{comida.strCategory}</p>
-                    </div>
-                ))}
-            </div>
-            <Footer></Footer>
+            {isLoading ? (
+                <div className="loader"></div>
+            ) : (
+                <div id='cardContainer'>
+                    {comidas.map((comida, index) => (
+                        <div key={index} className='card'>
+                            <img src={comida.strMealThumb} alt={comida.strMeal} />
+                            <h3>{comida.strMeal}</h3>
+                            <p>{comida.strCategory}</p>
+                        </div>
+                    ))}
+                </div>
+            )}
+            <Footer />
         </div>
     );
 }
