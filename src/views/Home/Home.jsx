@@ -3,6 +3,7 @@ import wood from '../../assets/backgrounds/blackWood.jpg'
 import food1 from '../../assets/backgrounds/FoodHome1.png'
 import carbon from '../../assets/backgrounds/carbon.png'
 import smoke from '../../assets/backgrounds/smoke.png'
+import logo from '../../assets/icons/mainLogo.png'
 
 import {Link} from 'react-router-dom';
 export default function Home(){
@@ -23,7 +24,8 @@ export default function Home(){
             
 
             <section id='titleContainer'>
-            <h1> FUSION POINT</h1>
+            {/* <h1> FUSION POINT</h1> */}
+            <img src={logo} id='mainLogo'></img>
             <h3> Bienvenido al festín de diversidad culinaria. Ven y explora un menú que desafía los límites y celebra la variedad de la cocina 
                 global en un ambiente acogedor y moderno.  </h3>
             <Link to='/Products' id='inbtn'>EXPERIMENTAR</Link>

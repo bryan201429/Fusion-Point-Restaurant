@@ -1,0 +1,55 @@
+#ProductsContainer{
+    background-image: url('../../assets/backgrounds/blackWood.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto
+}
+
+#cardContainer {
+    margin-top: 15vh;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 2vh;
+}
+
+.card {
+    font-family: 'Space Grotesk', sans-serif;
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde blanco semi-transparente */
+    border-radius: 8px;
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #777;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}

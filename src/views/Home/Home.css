@@ -29,6 +29,9 @@
    justify-content: center;
    /* background-color: red; */
 }
+#mainLogo{
+    transform: scale(0.8);
+}
 #titleContainer h1{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 5vw;
